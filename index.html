@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+<body class="overflow-x-hidden">
+    <nav class=" bg-black w-screen h-[88px] flex flex-row mx-auto justify-between ">
+        <div class="flex flex-row items-center">
+            <div class="logo flex flex-row items-center hover:opacity-80 cursor-pointer pl-28 ">
+                <svg class="fill-white h-10 w-10 items-center flex pt-1 " xmlns="http://www.w3.org/2000/svg">
+                    <path transform="scale(0.65)"
+                        d="M25.41 0C5.08 0 0 5.08 0 25.41s5.08 25.41 25.41 25.41 25.41-5.08 25.41-25.41S45.74 0 25.41 0zm-4.17 39.31A9.73 9.73 0 1 1 31 29.58a9.75 9.75 0 0 1-9.76 9.73zm17.67-.4h-4.77V16.67H11.91v-4.76h27z">
+                    </path>
+                    <circle
+                    transform="scale(0.65)" cx="21.24" cy="29.58" r="4.96"></circle>
+                </svg>
+                <h1 class="text-white text-2xl font-medium">Abstract</h1>
+            </div>
+            <div class="w-1 h-8 border-l-2 ml-2 flex "></div>
+            <h1 class="text-white text-2xl pl-2 hover:underline cursor-pointer">Help Center</h1>
+        </div>
+        <div class="flex flex-row items-center mr-40 mx-10">
+            <button class="px-7 mr-4 py-2 bg-transparent border-[1px] rounded-xl">
+                <h1 class="text-white text-2xl">
+                Submit a request
+                </h1>
+            </button>
+            <button class="px-9 py-2 bg-blue-600 rounded-xl hover:bg-white text-white hover:text-black transition-all ">
+                <h1 class="text-2xl">
+                    Sign in
+                </h1>
+            </button>
+        </div>
+        <div class="fixed bottom-5 right-28 w-6"><button class="bg-blue-600 rounded-3xl pr-6 pl-3 py-3"><h1 class="text-md font-bold flex flex-row items-center text-white"><i class='bx bx-question-mark pr-2'></i>Help</h1></button></div>
+    </nav>
+    <section id="search" class="bg-purple-200 h-[400px] flex flex-col items-center justify-center">
+        <div class="pb-5">
+            <h1 class="text-7xl font-medium">How can we help?</h1>
+        </div>
+        <form class="py-5">
+            <div class="relative">
+                <input class=" w-[650px] h-16 border-[1px] p-5 rounded-md text-xl hover:border-purple-600 focus:border-purple-600 focus:outline-none border-black" placeholder="Search" />
+                <i class='bx bx-right-arrow-alt absolute right-5 top-3.5 text-3xl  hover:text-purple-600'></i>
+            </div>
+        </form>
+    </section>
+    <section id="services" class="pt-40 pb-20"> 
+        <ul class="grid grid-rows-3 grid-cols-2 mx-auto w-9/12">
+            <li class="flex flex-row m-10">
+                <img src="https://help.abstract.com/hc/theming_assets/01HZH4D4GACXWCRKK6JHQ730XD" class="w-auto h-24 pr-6">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold">Using Abstract</h1>
+                    <p class="text-2xl py-3">Abstract lets you manage, version, and document your designs in one place.</p>
+                    <a href="/" class="text-xl text-blue-500 hover:underline">Learn More  &rarr;</a>
+                </div>
+            </li>
+            <li class="flex flex-row m-10">
+                <img src="https://help.abstract.com/hc/theming_assets/01HZH4D45NKFCN3388ZCBJB878" class="w-auto h-24 pr-6">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold">Manage your account</h1>
+                    <p class="text-2xl py-3 w-[110%]">Configure your account settings, such as your email, profile details, and password.</p>
+                    <a href="/" class="text-xl text-blue-500 hover:underline">Learn More  &rarr;</a>
+                </div>
+            </li>
+            <li class="flex flex-row m-10">
+                <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3M8CRR0C2V5GREVR6HK" class="w-auto h-24 pr-6">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold">Manage organizations, teams, and projects</h1>
+                    <p class="text-2xl py-3 w-[120%]">Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                    <a href="/" class="text-xl text-blue-500 hover:underline">Learn More  &rarr;</a>
+                </div>
+            </li>
+            <li class="flex flex-row m-10">
+                <img src="https://help.abstract.com/hc/theming_assets/01HZH4D38K1S1M9WKWSQZE62YE" class="w-auto h-24 pr-6">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold">Manage billing</h1>
+                    <p class="text-2xl py-3">Change subscriptions and payment details.</p>
+                    <a href="/" class="text-xl text-blue-500 hover:underline">Learn More  &rarr;</a>
+                </div>
+            </li>
+            <li class="flex flex-row m-10">
+                <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3S3QY5190TZE3H8ZSVK" class="w-auto h-24 pr-6">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold">Authenticate to Abstract</h1>
+                    <p class="text-2xl py-3">Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                    <a href="/" class="text-xl text-blue-500 hover:underline">Learn More  &rarr;</a>
+                </div>
+            </li>
+            <li class="flex flex-row m-10">
+                <img src="https://help.abstract.com/hc/theming_assets/01HZH4D3G4S2K93BN3WJPT8600" class="w-auto h-24 pr-6">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold">Abstract support</h1>
+                    <p class="text-2xl py-3">Get in touch with a human.</p>
+                    <a href="/" class="text-xl text-blue-500 hover:underline">Learn More  &rarr;</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="bg-black h-[400px] text-white">
+        <div class="flex flex-row w-[87%] mx-auto pt-12 justify-around">
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold mb-5">Abstract</h1>
+                <ul>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Start Trial</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Pricing</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Download</h3></a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold mb-5">Resources</h1>
+                <ul>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Blog</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Help Center</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Release Notes</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Status</h3></a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold mb-5">Community</h1>
+                <ul>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Twitter</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">LinkedIn</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Facebook</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Dribble</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Podcast</h3></a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-2xl font-bold mb-5">Company</h1>
+                <ul>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">About Us</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Careers</h3></a></li>
+                    <li class="hover:underline"><a href="/"><h3 class="font-medium">Legal</h3></a></li>
+                </ul>
+                <div class="pt-10">
+                    <h2 class="font-bold">Contact Us</h2>
+                    <p>info@abstract.com</p>
+                </div>
+            </div>
+            <div class="pt-40 pl-28">
+                <svg class="fill-white h-10 w-10 items-center flex pt-1 " xmlns="http://www.w3.org/2000/svg">
+                    <path transform="scale(0.65)"
+                        d="M25.41 0C5.08 0 0 5.08 0 25.41s5.08 25.41 25.41 25.41 25.41-5.08 25.41-25.41S45.74 0 25.41 0zm-4.17 39.31A9.73 9.73 0 1 1 31 29.58a9.75 9.75 0 0 1-9.76 9.73zm17.67-.4h-4.77V16.67H11.91v-4.76h27z">
+                    </path>
+                    <circle
+                    transform="scale(0.65)" cx="21.24" cy="29.58" r="4.96"></circle>
+                </svg>
+                <h1 class="text-xl">© Copyright 2024<br>
+                    Abstract Studio Design, Inc.<br>
+                    All rights reserved</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
